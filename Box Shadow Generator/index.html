@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Box Shadow Generator</h1>
+
+        <main>
+            <div class="display">
+                <div class="demo"></div>
+            </div>
+            <div class="controls">
+                <div class="control">
+                    <label for="x">X: </label>
+                    <input type="range" name="x" min="-50" max="50" value="0" data-sizing="px">
+                    <span class="values">0</span>
+                </div>
+                <div class="control">
+                    <label for="y">Y: </label>
+                    <input type="range" name="y" min="-50" max="50" value="0" data-sizing="px">
+                    <span class="values">0</span>
+                </div>
+                <div class="control">
+                    <label for="blur">Blur: </label>
+                    <input type="range" name="blur" min="0" max="200" value="15" data-sizing="px">
+                    <span class="values">15</span>
+                </div>
+                <div class="control">
+                    <label for="spread">Spread: </label>
+                    <input type="range" name="spread" min="0" max="200" value="0" data-sizing="px">
+                    <span class="values">0</span>
+                </div>
+                <div class="control">
+                    <label for="color">Color: </label>
+                    <input type="color" name="color" value="#000000" data-pre="#">
+                    <span class="values">#000000</span>
+                </div>
+                <div class="control">
+                    <label for="inset">Inset: </label>
+                    <input type="checkbox" name="inset">
+                </div>
+            </div>
+        </main>
+
+        <div class="code">
+            <div class="head">
+                <h2>CSS Code </h2> <button> <i class="far fa-copy" title="Click to Copy!"></i><span class="info hidden">Copied!</span></button>
+            </div>
+            <p class="gen-code"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
